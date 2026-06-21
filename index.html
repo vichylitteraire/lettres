@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Lettres sans destinataire</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+
+<header>
+
+
+    <div class="logo">
+        LETTRES ANONYMES <BR> SANS DESTINATAIRE
+    </div>
+
+
+    <button class="write-button">
+        Écrire une lettre
+    </button>
+
+
+</header>
+
+
+
+
+
+<main>
+
+
+
+    <!-- Présentation du projet -->
+
+
+    <section class="intro">
+
+<h1 class="lm">VICHY LITTÉRAIRE</h1>
+        <p>
+            Des lettres qui n'ont jamais trouvé leur chemin.
+        </p>
+
+    </section>
+
+
+
+
+
+
+
+
+    <!-- Les 10 lettres visibles -->
+
+
+    <section class="letters">
+
+    </section>
+
+
+
+
+
+
+
+
+
+    <!-- Archives -->
+
+
+    <section class="archive">
+
+
+        <h2>
+            Archives
+        </h2>
+
+
+
+        <p>
+            Les lettres qui ont quitté la page principale
+            restent conservées ici.
+        </p>
+
+
+
+
+<a href="archive.html"><button>Ouvrir les archives</button></a>
+
+
+
+    </section>
+
+
+
+
+
+</main>
+
+
+<!-- Écrire une lettre -->
+
+
+<section class="write-modal">
+
+
+    <button class="closeWrite">
+        Fermer
+    </button>
+
+
+<input type="text" id="letter-title" placeholder="Titre de votre lettre">
+
+    <textarea id="letter-content" placeholder="
+Écrivez ce que vous n'avez jamais envoyé...
+"></textarea>
+
+
+
+
+
+    <button id="send-btn">Envoyer</button>
+
+
+
+</section>
+
+
+<div id="read-modal" class="read-modal">
+    <div class="modal-content">
+        <h2 id="modal-title"></h2>
+        <p id="modal-text"></p>
+        <button onclick="document.getElementById('read-modal').style.display='none'">
+            Fermer
+        </button>
+    </div>
+</div>
+
+
+
+
+
+
+
+<footer>
+
+
+    <p>
+        Certaines lettres pourront accompagner
+        les projets artistiques
+        de l'association.
+    </p>
+
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="script.js"></script>
+</body>
+
+</html>
